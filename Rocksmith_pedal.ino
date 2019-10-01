@@ -3,6 +3,7 @@
 #include <Keyboard.h>
 
 void setup() {
+  //LED is no longer handled by a digital IO pin - use 3.3V or 5V pin. 
   pinMode(2, INPUT_PULLUP); 
   pinMode(3, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
@@ -15,7 +16,7 @@ void setup() {
   pinMode(11, INPUT_PULLUP);
   pinMode(12, INPUT_PULLUP);
   pinMode(13, INPUT_PULLUP);
-  pinMode(A0, OUTPUT);       //LED
+  pinMode(A0, INPUT_PULLUP);       
   pinMode(A1, INPUT_PULLUP);
   pinMode(A2, INPUT_PULLUP);
   pinMode(A3, INPUT_PULLUP);
@@ -66,6 +67,11 @@ void loop() {
    else if (digitalRead(9) == 0)
    {
       Keyboard.write('3');
+      delay(200);
+   }
+   else if (digitalRead(A0) == 0)
+   {
+      Keyboard.write('4'); //Space
       delay(200);
    }
    else if (digitalRead(10) == 0)
