@@ -70,7 +70,7 @@ void loop() {
    }
    else if (digitalRead(A0) == 0)
    {
-      Keyboard.write('4'); //Space
+      Keyboard.write('4'); 
       delay(200);
    }
    else if (digitalRead(10) == 0)
