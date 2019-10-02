@@ -26,7 +26,6 @@ void setup() {
 
 void loop() {
    // put your main code here, to run repeatedly:
-   digitalWrite(A0, HIGH);  //LED ON
    Keyboard.begin();
    if (digitalRead(2) == 0)
    {
