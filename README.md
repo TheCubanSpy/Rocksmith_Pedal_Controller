@@ -17,6 +17,7 @@ Print speed 30mm/s
 
 Cooling fan off
 
+The design uses kellyegan's Arduino OpenSCAD mounting library V2.0: https://www.thingiverse.com/thing:64008
 
 Parts List:
 
